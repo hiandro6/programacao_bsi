@@ -13,22 +13,22 @@ int main() {
 	else {
 		if (consumo <= 100){
 			float tarifa = (consumo * 0.5);
-			printf("%d e o valor da sua tarifa", tarifa);
+			printf("%f e o valor da sua tarifa", tarifa);
 	
 		}
 
 		else if ((consumo >= 101) && (consumo <= 200)){
-			printf("%d e o valor da sua tarifa", (consumo * 0.75));
+			printf("%f e o valor da sua tarifa", (consumo * 0.75));
 	
 		}
 
 		else if ((consumo > 200) && (consumo <= 500)){
-			printf("%d e o valor da sua tarifa", (consumo * 1.20));
+			printf("%f e o valor da sua tarifa", (consumo * 1.20));
 	
 		}
 
 		else if (consumo > 500){
-			printf("%d e o valor da sua tarifa", (consumo * 1.20) + (consumo * 0.15));
+			printf("%f e o valor da sua tarifa", (consumo * 1.20) + (consumo * 0.15));
 	
 		}
 	}
