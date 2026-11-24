@@ -19,15 +19,13 @@ int main(void) {
         return 1;
     }
 
-    if (fscanf(arquivo, "%d;%49[^;];%f",
+    while (fscanf(arquivo, "%d;%49[^;];%f",
         &aluno.matricula, aluno.nome, &aluno.nota) == 3) {
 
         printf("Nome: %s\n", aluno.nome);
         printf("Matricula: %d\n", aluno.matricula);
         printf("Nota: %.2f\n", aluno.nota);
 
-    } else {
-        printf("Erro ao ler os dados do arquivo!\n");
     }
 
     fclose(arquivo);
